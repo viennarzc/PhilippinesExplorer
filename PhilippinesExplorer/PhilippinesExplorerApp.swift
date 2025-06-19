@@ -11,7 +11,7 @@ import SwiftUI
 struct PhilippinesExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhilippinesExplorerSplitView()
         }
     }
 }
