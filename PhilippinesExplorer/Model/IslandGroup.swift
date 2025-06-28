@@ -61,7 +61,7 @@ extension IslandGroup {
             regions: [
                 Region(name: "Central Visayas", provinces: ["Cebu", "Bohol", "Negros Oriental", "Siquijor"], famousLandmarks: ["Chocolate Hills", "Magellan’s Cross"]),
                 Region(name: "Western Visayas", provinces: ["Iloilo", "Aklan", "Capiz", "Antique"], famousLandmarks: ["Boracay", "Miagao Church"])
-            ], heroImageNames: []
+            ], heroImageNames: ["visayas-bohol", "visayas-iloilo", "visayas-magellan"]
         ),
         IslandGroup(
             name: "Mindanao",
@@ -73,7 +73,7 @@ extension IslandGroup {
             regions: [
                 Region(name: "Northern Mindanao", provinces: ["Bukidnon", "Misamis Oriental", "Misamis Occidental"], famousLandmarks: ["Dahilayan Adventure Park", "Divine Mercy Shrine"]),
                 Region(name: "Davao Region", provinces: ["Davao del Sur", "Davao del Norte", "Davao Oriental"], famousLandmarks: ["Mount Apo", "Eden Nature Park"])
-            ], heroImageNames: []
+            ], heroImageNames: ["mindanao-bukidnon", "mindanao-mtapo", "mindanao-sebu"]
         )
     ]
 }
@@ -90,6 +90,14 @@ extension IslandGroup {
  
  3. Photo by <a href="https://unsplash.com/@omridcohen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Omri D. Cohen</a> on <a href="https://unsplash.com/photos/a-view-of-a-rice-field-with-mountains-in-the-background-n0cIllz0s08?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
  
+ 4. Photo by <a href="https://unsplash.com/@beiayson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bei Ayson</a> on <a href="https://unsplash.com/photos/brown-cross-on-white-wall-kD0ApmKkAOc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
  
+ 5. Photo by <a href="https://unsplash.com/@namu_photograph?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hitoshi Namura</a> on <a href="https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-MyiYvI-EKis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+ 6. Photo by <a href="https://unsplash.com/@jun03man?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jvn Mangyao</a> on <a href="https://unsplash.com/photos/a-large-white-building-with-a-fountain-in-front-of-it--UeZaET49EY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+ 7. Photo by <a href="https://unsplash.com/@renesansz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rene Padillo</a> on <a href="https://unsplash.com/photos/a-river-running-through-a-lush-green-valley-J5QkB8IAg-k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+ 
+ 8. https://www.rappler.com/tachyon/r3-assets/4DD6A77DBC5B4C338DEC96105ABF79FB/img/C01AF679DB4749CBBE4C9D20CF736974/MT.-APO-REFLECTION-scaled.jpg?resize=2560%2C1707&zoom=1
+ 
+ 9. By Herbertkikoy - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=136654000
  
  */

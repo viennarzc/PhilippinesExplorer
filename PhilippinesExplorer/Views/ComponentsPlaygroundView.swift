@@ -13,7 +13,7 @@ struct ComponentsPlaygroundView: View {
     
     var body: some View {
         ScrollView {
-            GlassEffectContainer(spacing: 10) {
+//            GlassEffectContainer(spacing: 10) {
                 VStack {
                     Text("Mindanao")
                         .font(.largeTitle)
@@ -46,20 +46,20 @@ struct ComponentsPlaygroundView: View {
                     }
                     
                 }
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        
-                        withAnimation {
-                            expand.toggle()
-                        }
-                    }) {
-                        Image(systemName: "circle.dotted.and.circle")
+//            }
+            .ignoresSafeArea(edges: .top)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    
+                    withAnimation {
+                        expand.toggle()
                     }
+                }) {
+                    Image(systemName: "circle.dotted.and.circle")
                 }
             }
-            .ignoresSafeArea(edges: .top)
         }
         .background {
             Image(.luzonMayon)

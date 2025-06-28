@@ -15,12 +15,19 @@ enum NavigationOptions: Equatable, Hashable, Identifiable {
     /// A case that represents viewing the app's favorites
     case favorites
     
-    static let mainPages: [NavigationOptions] = [.majorIslandGroups, .favorites]
+    case playgrounds
+    
+    static let mainPages: [NavigationOptions] = [
+        .majorIslandGroups,
+        .favorites,
+        .playgrounds
+    ]
     
     var id: String {
         switch self {
         case .majorIslandGroups: "majorIslandGroups"
         case .favorites: "favorites"
+        case .playgrounds: "playgrounds"
         }
     }
     
@@ -28,6 +35,7 @@ enum NavigationOptions: Equatable, Hashable, Identifiable {
         switch self {
             case .majorIslandGroups: "Major Islands"
             case .favorites: "Favorites"
+            case .playgrounds: "Playgrounds"
         }
     }
     
@@ -35,6 +43,7 @@ enum NavigationOptions: Equatable, Hashable, Identifiable {
         switch self {
         case .majorIslandGroups: "globe.asia.australia"
         case .favorites: "book.closed"
+        case .playgrounds: "square.and.arrow.up.on.square.fill"
         }
     }
     
@@ -42,8 +51,8 @@ enum NavigationOptions: Equatable, Hashable, Identifiable {
     @MainActor @ViewBuilder func viewForPage() -> some View {
         switch self {
         case .majorIslandGroups: MainIslandGroupsView()
-        
         case .favorites: FavoritesView()
+        case .playgrounds: PlaygroundsListView()
         }
         
     }
