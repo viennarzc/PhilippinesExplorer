@@ -13,7 +13,6 @@ struct ComponentsPlaygroundView: View {
     
     var body: some View {
         ScrollView {
-//            GlassEffectContainer(spacing: 10) {
                 VStack {
                     Text("Mindanao")
                         .font(.largeTitle)
@@ -46,7 +45,6 @@ struct ComponentsPlaygroundView: View {
                     }
                     
                 }
-//            }
             .ignoresSafeArea(edges: .top)
         }
         .toolbar {
