@@ -142,6 +142,7 @@ struct ComponentControlsToggleView: View {
                 
                 Spacer(minLength: 90)
 
+
                 
             }
             .padding(.horizontal)
