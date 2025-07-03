@@ -100,6 +100,29 @@ struct ComponentsPickerView: View {
                 .glassEffect()
                 .tint(.white)
                 
+                Picker(selection: $selectedRegion) {
+                    Text("NCR").tag(String("NCR"))
+                    Text("Ilocos Region").tag(String("Ilocos Region"))
+                    Text("Central Luzon").tag(String("Central Luzon"))
+                    Text("SOCCSKSARGEN").tag(String("SOCCSKSARGEN"))
+                    Text("BARMM").tag(String("BARMM"))
+                    
+                    Picker("Palette style", selection: $selectedRegion) {
+                        Text("Item 1").tag(String("Item 1"))
+                        Text("Item 2").tag(String("Item 2"))
+                        Text("Item 3").tag(String("Item 3"))
+                        Text("Item 4").tag(String("Item 4"))
+                        Text("Item 5").tag(String("Item 5"))
+
+                    }
+                    .pickerStyle(.palette)
+                    .paletteSelectionEffect(.symbolVariant(.circle))
+                    
+                } label: {
+                    Text("Select")
+                }
+                .glassEffect()
+                
                 
             }
             .padding(.horizontal)
