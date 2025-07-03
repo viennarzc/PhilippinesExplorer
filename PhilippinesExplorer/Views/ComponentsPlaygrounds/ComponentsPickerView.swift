@@ -7,31 +7,32 @@
 
 import SwiftUI
 
+enum ImageBackground: Identifiable {
+    var id: String { name }
+    
+    case mtApo
+    case banaue
+    
+    var name: String {
+        switch self {
+        case .banaue: "Banaue"
+        case .mtApo: "Mount Apo"
+        }
+    }
+    var image: ImageResource {
+        switch self {
+        case .banaue: ImageResource.luzonBanaue
+        case .mtApo: ImageResource.mindanaoMtapo
+        }
+    }
+}
+
 struct ComponentsPickerView: View {
     @State private var selectedRegion: String = "NCR"
     @State private var selectedBackgroundPhoto: ImageBackground = .mtApo
     @State private var showBackground: Bool = false
     
     
-    enum ImageBackground: Identifiable {
-        var id: String { name }
-        
-        case mtApo
-        case banaue
-        
-        var name: String {
-            switch self {
-            case .banaue: "Banaue"
-            case .mtApo: "Mount Apo"
-            }
-        }
-        var image: ImageResource {
-            switch self {
-            case .banaue: ImageResource.luzonBanaue
-            case .mtApo: ImageResource.mindanaoMtapo
-            }
-        }
-    }
     
     var body: some View {
         ZStack {

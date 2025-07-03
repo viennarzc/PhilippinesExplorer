@@ -35,6 +35,36 @@ struct PlaygroundsListView: View {
                     Text("Forms")
                 }
                 
+                NavigationLink {
+                    ComponentControlsToggleView()
+                } label: {
+                    Text("Toggles")
+                }
+                
+                NavigationLink {
+                    ComponentsControlsButtonView()
+                } label: {
+                    Text("Buttons")
+                }
+                
+                NavigationLink {
+                    ComponentsMenuView()
+                } label: {
+                    Text("Menu")
+                }
+                
+                NavigationLink {
+                    ComponentsPickerView()
+                } label: {
+                    Text("Picker")
+                }
+                
+                NavigationLink {
+                    ComponentsSliderView()
+                } label: {
+                    Text("Slider")
+                }
+                
                 
             }
             .navigationTitle("Playgrounds List")
