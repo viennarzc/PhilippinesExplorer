@@ -32,8 +32,6 @@ struct ComponentsPickerView: View {
     @State private var selectedBackgroundPhoto: ImageBackground = .mtApo
     @State private var showBackground: Bool = false
     
-    
-    
     var body: some View {
         ZStack {
             VStack(spacing: 32) {
