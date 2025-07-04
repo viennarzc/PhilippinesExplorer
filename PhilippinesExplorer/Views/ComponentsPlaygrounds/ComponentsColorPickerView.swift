@@ -47,6 +47,7 @@ struct ComponentsColorPickerView: View {
                                 .padding()
                                 .glassEffect(.regular, in: Capsule())
                                 .glassEffectID("picker", in: animation)
+                                .tint(.red)
                         }
                         .padding()
                         
