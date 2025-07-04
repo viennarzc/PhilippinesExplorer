@@ -65,6 +65,12 @@ struct PlaygroundsListView: View {
                     Text("Slider")
                 }
                 
+                NavigationLink {
+                    ComponentsDatePickerView()
+                } label: {
+                    Text("Date Picker")
+                }
+                
                 
             }
             .navigationTitle("Playgrounds List")
